@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<episodedetails>
+  <plot>The Kerbys will have none of it.</plot>
+  <lockdata>false</lockdata>
+  <dateadded>2024-10-22 23:32:48</dateadded>
+  <title>Henrietta Sells the House</title>
+  <rating>0</rating>
+  <year>1954</year>
+  <runtime>28</runtime>
+  <tvrageid>289267</tvrageid>
+  <art>
+    <poster>/media/TV_Shows/Topper (1953)/Season 01/Topper (1953) S01E27-thumb.jpg</poster>
+  </art>
+  <actor>
+    <name>Robert Sterling</name>
+    <type>Actor</type>
+    <sortorder>0</sortorder>
+    <thumb>/config/metadata/People/R/Robert Sterling/folder.jpg</thumb>
+  </actor>
+  <actor>
+    <name>Anne Jeffreys</name>
+    <type>Actor</type>
+    <sortorder>1</sortorder>
+    <thumb>/config/metadata/People/A/Anne Jeffreys/folder.jpg</thumb>
+  </actor>
+  <actor>
+    <name>Leo G. Carroll</name>
+    <type>Actor</type>
+    <sortorder>2</sortorder>
+    <thumb>/config/metadata/People/L/Leo G. Carroll/folder.jpg</thumb>
+  </actor>
+  <actor>
+    <name>Lee Patrick</name>
+    <type>Actor</type>
+    <sortorder>3</sortorder>
+    <thumb>/config/metadata/People/L/Lee Patrick/folder.jpg</thumb>
+  </actor>
+  <actor>
+    <name>Edna Skinner</name>
+    <type>Actor</type>
+    <sortorder>4</sortorder>
+    <thumb>/config/metadata/People/E/Edna Skinner/folder.jpg</thumb>
+  </actor>
+  <showtitle>Topper</showtitle>
+  <episode>27</episode>
+  <season>1</season>
+  <aired>1954-04-09</aired>
+  <fileinfo>
+    <streamdetails>
+      <video>
+        <codec>h264</codec>
+        <micodec>h264</micodec>
+        <bitrate>771342</bitrate>
+        <width>680</width>
+        <height>572</height>
+        <aspect>4:3</aspect>
+        <aspectratio>4:3</aspectratio>
+        <framerate>25</framerate>
+        <language>und</language>
+        <scantype>progressive</scantype>
+        <default>True</default>
+        <forced>False</forced>
+        <duration>28</duration>
+        <durationinseconds>1692</durationinseconds>
+      </video>
+      <audio>
+        <codec>aac</codec>
+        <micodec>aac</micodec>
+        <bitrate>160607</bitrate>
+        <language>eng</language>
+        <scantype>progressive</scantype>
+        <channels>2</channels>
+        <samplingrate>48000</samplingrate>
+        <default>True</default>
+        <forced>False</forced>
+      </audio>
+      <audio>
+        <codec>aac</codec>
+        <micodec>aac</micodec>
+        <bitrate>291730</bitrate>
+        <language>eng</language>
+        <scantype>progressive</scantype>
+        <channels>2</channels>
+        <samplingrate>48000</samplingrate>
+        <default>False</default>
+        <forced>False</forced>
+      </audio>
+      <data>
+        <codec>bin_data</codec>
+        <micodec>bin_data</micodec>
+        <language>eng</language>
+        <scantype>progressive</scantype>
+        <default>False</default>
+        <forced>False</forced>
+      </data>
+    </streamdetails>
+  </fileinfo>
+</episodedetails>

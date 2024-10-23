@@ -1,0 +1,70 @@
+BrightScript Micro Debugger.
+Enter any BrightScript statement, debug commands, or HELP.
+
+Suspending threads...
+Thread selected:  1*   ...nts/tvshows/TVListDetails.brs(102)                  m.videoCodec.text = tr("Video") + ": " + itemData.MediaSources[i].MediaStreams[0].DisplayTitle
+
+Current Function:
+094:          m.progressBackground.visible = false
+095:          m.progressBar.visible = false
+096:      end if
+097:      ' Display current video_codec and check if there is more than one video to choose from...
+098:      m.videoCodec.visible = false
+099:      if isValid(itemData.MediaSources)
+100:          for i = 0 to itemData.MediaSources.Count() - 1
+101:              if item.selectedVideoStreamId = itemData.MediaSources[i].id and isValid(itemData.MediaSources[i].MediaStreams[0])
+102:*                 m.videoCodec.text = tr("Video") + ": " + itemData.MediaSources[i].MediaStreams[0].DisplayTitle
+103:                  SetupAudioDisplay(itemData.MediaSources[i].MediaStreams, item.selectedAudioStreamIndex)
+104:                  exit for
+105:              end if
+106:          end for
+Source Digest(s): 
+pkg:    dev 2.2.1 bd419b9d Jellyfin
+pkg: 632126 1.1.1 3660c933 libplayready
+
+Type Mismatch. Operator "+" can't be applied to "String" and "Invalid". (runtime error &h18) in pkg:/components/tvshows/TVListDetails.brs(102)
+Backtrace:
+#0  Function itemcontentchanged() As Void
+   file/line: pkg:/components/tvshows/TVListDetails.brs(102)
+Local Variables:
+global           Interface:ifGlobal
+m                roAssociativeArray refcnt=2 count:12
+item             roSGNode:TVEpisodeData refcnt=1
+itemdata         roAssociativeArray refcnt=1 count:28
+usersettings     roAssociativeArray refcnt=1 count:47
+indexnumber      roString (2.1 was String) refcnt=1 val:"27. "
+airdate          roDateTime refcnt=1
+imageurl         roString refcnt=1 val:"http://192.168.50.11:8096/Items/5e99605a75747511391dc02c0cb9f338/Images/Primary?maxheight=250&"...
+runtime          Integer val:28 (&h1C)
+progresswidthinpixels <uninitialized>
+i                Integer val:0 (&h0)
+Threads:
+ID    Location                                Source Code
+ 0[u] ??
+ 1*   ...nts/tvshows/TVListDetails.brs(102)                  m.videoCodec.text = tr("Video") + ": " + itemData.MediaSources[i].MediaStreams[0].DisplayTitle
+  *selected   [u]unattached(not debuggable)
+
+Brightscript Debugger> Syntax Error. (compile error &h02) in $LIVECOMPILE(828)
+
+Brightscript Debugger> Thread selected:  0*   ...nts/tvshows/TVListDetails.brs(22)       userSettings = m.global.session.user.settings
+
+Current Function:
+019:  sub itemContentChanged()
+020:      item = m.top.itemContent
+021:      itemData = item.json
+022:*     userSettings = m.global.session.user.settings
+023:      ' Set default video source if user hasn't selected one yet
+024:      if item.selectedVideoStreamId = "" and isValid(itemData.MediaSources)
+025:          item.selectedVideoStreamId = itemData.MediaSources[0].id
+026:  10-22 22:59:38.749 [bs.ndk.proc.exit] plugin=dev pid=4734 status=exit retval=12 user requested=0 process name='SdkLauncher' exit code=EXIT_BRIGHTSCRIPT_CRASH
+10-22 22:59:38.808 [beacon.signal] |AppExitInitiate -----------> TimeBase(285464 ms)
+10-22 22:59:38.813 [beacon.header] __________________________________________
+10-22 22:59:38.813 [beacon.report] |AppLaunchInitiate ---------> TimeBase(0 ms), InstantOn
+10-22 22:59:38.813 [beacon.report] |AppSplashInitiate ---------> TimeBase(2 ms)
+10-22 22:59:38.813 [beacon.report] |AppSplashComplete ---------> Duration(635 ms)
+10-22 22:59:38.814 [beacon.report] |AppExitInitiate -----------> TimeBase(285464 ms)
+10-22 22:59:38.814 [beacon.report] |AppExitComplete -----------> Duration(4 ms)
+10-22 22:59:38.814 [beacon.footer] __________________________________________
+
+telnet> 
+telnet> Connection closed.
